@@ -1,0 +1,129 @@
+<!doctype html>
+{%load static%}
+<html>
+<head>
+<meta charset="utf-8">
+
+
+     <script src="{% static 'react/js/browser.min.js' %}"></script>
+     <script src="{% static 'react/js/react.js' %}"></script>
+     <script src="{% static 'react/js/react-dom.js'%}"></script>
+     <script src="{% static 'react/js/prop-types.min.js'%}"></script>
+
+
+
+     <script src="{% static 'react/moment-jalaali/build/moment-jalaali.js'%}"></script>
+     <script src="{% static 'react/moment/min/moment.min.js'%}"></script>
+
+
+    <script type="text/babel" src="{% static 'react/js/watch.js'%}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'react/css/watch.css' %}">
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery Sidebar.js Plugin Demo</title>
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<link href="{%static 'sidebar/sidebar.css' %}" rel="stylesheet" type="text/css">
+<style>
+body {background-color: #fafafa; font-family:'Open Sans';}
+</style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+ <aside id="side-wrapper">
+                <div class="media">
+                    <div class="media-left">
+                       <i class="fa fa-user fa-4x"></i>
+                    </div>
+                    <div class="media-body">
+                        <span class="small text-muted">Welcome,</span>
+                        <h5 class="media-heading">Guest</h5>
+                    </div>
+                </div>
+                <ul class="nav nav-pills nav-stacked">
+                    <li>
+                        <a href="#"><i class="fa fa-dashboard"></i> Dashboard</a>
+                    </li>
+
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> Acount  <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a   href="table"><i class="fa fa-table"></i>‫‪Table‬‬</a></li>
+                            <li><a href="#"><i class="fa fa-table"></i>‫‪Pagination‬‬</a></li>
+                            <li><a href="#"><i class="fa fa-exclamation-triangle"></i>‫‪Alert‬‬ ‫‪message‬‬‫‪‬‬</a></li>
+                            <li><a href="#">‫‪Modal‬‬‫‪‬‬‫‪‬‬</a></li>
+                            <li><a href="#">‫‪Tooltip‬‬‬‬‫‪‬‬</a></li>
+                            <li><a href="#">‫‪Buttons‬‬‬‬‫‪‬‬</a></li>
+                            <li><a href="#">‫‪Breadcrumbs‬‬‫‪‬‬‬‬‫‪‬‬</a></li>
+                            <li><a href="#"><i class="fa fa-tags"></i>‫‪Labels‬‬ ‫‪and‬‬ ‫‪tags‬‬‬‬‫‪‬‬‬‬‫‪‬‬</a></li>
+                            <li><a href="#"><i class="fa fa-heading"></i>‫‪Heading‬‬ ‫‪and‬‬ ‫‪title‬‬‬‬‬‬‫‪‬‬‬‬‫‪‬‬</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <div id="content-wrapper">
+                <nav class="navbar navbar-default navbar-static-top">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                          </button>
+                          <a data-toggle="sidebar" class="navbar-brand" href="#"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
+                          <a class="navbar-brand" href="#"><i class="fa fa-angle-double-left"></i> Click Me</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <div id="watch"></div>
+                    <div id="cal"></div>
+                    <hr />
+                    <div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+                </div>
+            </div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="{% static 'sidebar/sidebar.js'%}"></script>
+<script>
+    $('#wrapper').sidebar();
+</script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

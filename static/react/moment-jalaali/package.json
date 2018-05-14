@@ -1,0 +1,107 @@
+{
+  "_args": [
+    [
+      "moment-jalaali",
+      "/home/parspooyesh/package"
+    ]
+  ],
+  "_from": "moment-jalaali@latest",
+  "_id": "moment-jalaali@0.7.3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/moment-jalaali",
+  "_nodeVersion": "9.9.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/moment-jalaali_0.7.3_1525845349610_0.27714828240007416"
+  },
+  "_npmUser": {
+    "email": "ali.taheri.m@gmail.com",
+    "name": "alitaheri"
+  },
+  "_npmVersion": "6.0.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "moment-jalaali",
+    "raw": "moment-jalaali",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/moment-jalaali/-/moment-jalaali-0.7.3.tgz",
+  "_shasum": "6eef53cb887e7539b607d296e523ed82bdfb0e02",
+  "_shrinkwrap": null,
+  "_spec": "moment-jalaali",
+  "_where": "/home/parspooyesh/package",
+  "author": {
+    "email": "behrangn@gmail.com",
+    "name": "Behrang Noruzi Niya"
+  },
+  "bugs": {
+    "url": "https://github.com/behrang/moment-jalaali/issues"
+  },
+  "dependencies": {
+    "jalaali-js": "^1.1.0",
+    "moment": "^2.22.1",
+    "rimraf": "^2.6.2"
+  },
+  "description": "Jalaali (Jalali, Persian, Khorshidi, Shamsi) calendar system plugin for moment.js.",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "mocha": "^5.1.1"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 13,
+    "integrity": "sha512-eUBtMvidFtnFv/7LGx5+KDvZVEB0htJ9DDpbbVbVpUrq7cU5QfqFZ6hdxcpUfqf5POs4/yPRTVY5pl8ylKtqbQ==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa8o1mCRA9TVsSAnZWagAA1ogP/A6eTzKHavgtnhCCg48l\n/1meiXSxtnU4f4hC8y/0qw6PrL29xBWvdTCiax1SN5rtAzoTcHGqYD8OFY+l\nuqBtSYlGISbfaXd6JSqZWcM56KMcbx/JU3VFomnawvyXS11WXBjww69ULLH0\n1F490x7OskjUVXj3RtPYYIQBikZQ9RUgGsiKgIYtL6XRmym3QI0vHJW6tTnp\nMbrwfQQYP/qaUe3S87M/nCnj+NBW2Mhh453g0coP9i/6p7TMBi9MP61JvPWI\nRa5C3eJb71TUUAEw8CRPayK/XVWHwb66J3uegeRyK+/9vGTYYNh7Ior9UNsD\nv9i/47tE3wuUdsLYPvGxafxtOWkAMyD1mPlwjKEdCsqCmhwiUNj5duO0YxPa\ndMfR+vnlkbIRrNQ8neblqx10t5/EeLLJBmdNVSapGxa0kzj6zrifohTB9ns7\n24zSgrn+bHuKlIRn2t8yXUkNaHJdEi7ASL0svgwLYP1U2bYpPQP59oenvOmO\naP7O8LqEqdw9HMabnP4YL+2e2voe3sDIurV6oTYjHoS++QIFCzhXHky2BrTv\nlOmapOCZIchuyeaNx5ifdiXcjXBMe2TgW5Wc7acm9MBe0PDx+Qe4pf3HrOwL\nskag7+/fRUFJGolvW8fij7cgmE/KTvWwJqmnxNit5PUU5ib5IknwnwUTI3qr\nuw0Q\r\n=6sqW\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "6eef53cb887e7539b607d296e523ed82bdfb0e02",
+    "tarball": "https://registry.npmjs.org/moment-jalaali/-/moment-jalaali-0.7.3.tgz",
+    "unpackedSize": 104928
+  },
+  "gitHead": "b029fabdc3b5a4de3ffda29e49885a1d031e501a",
+  "homepage": "https://github.com/behrang/moment-jalaali",
+  "keywords": [
+    "calendar",
+    "conversion",
+    "convert",
+    "date",
+    "jalaali",
+    "jalali",
+    "khorshidi",
+    "persian",
+    "shamsi"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "alitaheri",
+      "email": "ali.taheri.m@gmail.com"
+    },
+    {
+      "name": "behrang",
+      "email": "behrangn@gmail.com"
+    }
+  ],
+  "name": "moment-jalaali",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/behrang/moment-jalaali.git"
+  },
+  "scripts": {
+    "build": "node umd-build.js",
+    "clean": "rimraf build",
+    "lint": "eslint index.js && eslint --env mocha --rule 'no-unused-expressions: 0' test.js",
+    "prepublishOnly": "npm run build",
+    "test": "mocha --reporter spec --ui bdd --colors --check-leaks test.js"
+  },
+  "version": "0.7.3"
+}
