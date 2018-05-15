@@ -1,22 +1,20 @@
 <!doctype html>
 {%load static%}
+{% load staticfiles %}
 <html>
 <head>
 <meta charset="utf-8">
 
 
-     <script src="{% static 'react/js/browser.min.js' %}"></script>
+
      <script src="{% static 'react/js/react.js' %}"></script>
      <script src="{% static 'react/js/react-dom.js'%}"></script>
      <script src="{% static 'react/js/prop-types.min.js'%}"></script>
+     <script src="{% static 'react/js/babel.js'%}"></script>
 
-
-
-     <script src="{% static 'react/moment-jalaali/build/moment-jalaali.js'%}"></script>
-     <script src="{% static 'react/moment/min/moment.min.js'%}"></script>
-
-
-    <script type="text/babel" src="{% static 'react/js/watch.js'%}"></script>
+      <script  src="{% static 'react/moment/min/moment.min.js'%}"></script>
+      <script  src="{% static 'react/dist/jalali-moment.js'%}"></script>
+      <script  src="{% static 'react/dist/jalali-moment.browser.js'%}"></script>
 
     <link rel="stylesheet" type="text/css" href="{% static 'react/css/watch.css' %}">
 
@@ -90,6 +88,7 @@ body {background-color: #fafafa; font-family:'Open Sans';}
                 <div class="container-fluid">
                     <div id="watch"></div>
                     <div id="cal"></div>
+                    <script type="text/babel" src="{% static 'react/js/watch.js'%}"></script>
                     <hr />
                     <div class="jquery-script-ads"><script type="text/javascript"><!--
 google_ad_client = "ca-pub-2783044520727903";

@@ -72,6 +72,8 @@ class Clock extends React.Component {
             <div>
                 <Panel toggleDate={this.toggleDate} dateOn={this.state.isDateVisible} />
                 <Display date={this.state.date} isDateVisible={this.state.isDateVisible} />
+
+
             </div>
         );
     }
@@ -112,6 +114,8 @@ const Display = (props) => (
             <div className="col-md-4 mx-auto">
                 <div className="display">
                     <div className="display-time">{DateTime.toTimeString(props.date)}</div>
+                    <div className="display-time">{moment(moment(props.date).format('YYYY/MM/DD'),'YYYY/MM/DD').locale('fa').format('YYYY/MM/DD')}</div>
+
                     { props.isDateVisible && <div className="display-date">{DateTime.toDateString(props.date)}</div> }
                 </div>
             </div>
@@ -198,6 +202,7 @@ class Jalali extends React.Component{
       super(props);
       //m = moment('1360/5/26', 'jYYYY/jM/jD')
       this.state={
+          data:"ali"
 
          //data:moment('2013-8-25 16:40:00', 'YYYY-M-D HH:mm:ss').endOf('jMonth').format('jYYYY/jM/jD HH:mm:ss')
          //data:moment('1392/6/3 16:40', 'jYYYY/jM/jD HH:mm').format('YYYY-M-D HH:mm:ss')
@@ -206,7 +211,7 @@ class Jalali extends React.Component{
          //data:moment('1360/5/26', 'jYYYY/jM/jD').format('jYYYY/jM/jD [is] YYYY/M/D')
           //data:moment.loadPersian('2013-8-25 16:40:00', 'YYYY-M-D HH:mm:ss')
           //data:moment.jDaysInMonth(1395, 11)
-          data:moment('1391/12/30', 'jYYYY/jMM/jDD').isValid()
+          //data:moment('1391/12/30', 'jYYYY/jMM/jDD').isValid()
       }
     }
     //moment('2013-8-25', 'YYYY-M-D').endOf('jMonth').format('jYYYY/jM/jD ')
@@ -214,12 +219,11 @@ class Jalali extends React.Component{
       return(
         <div>
            <h1>jalai calender</h1>
-           <h3>{this.state.data}</h3>
-           <h4> {moment('1360/5/26', 'jYYYY/jM/jD').format('jYYYY/jM/jD [is] YYYY/M/D')}</h4>
+           <h4> {moment('2018/01/24', 'YYYY/MM/DD').locale('fa').format('YYYY/MM/DD')}</h4>
         </div>
       )
     }
 }
 
 ReactDOM.render(<App/>,document.getElementById("watch"))
-ReactDOM.render(<Jalali/>,document.getElementById("cal"))
+//ReactDOM.render(<Jalali/>,document.getElementById("cal"))
