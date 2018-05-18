@@ -203,27 +203,22 @@ class Jalali extends React.Component{
       //m = moment('1360/5/26', 'jYYYY/jM/jD')
       this.state={
           data:"ali"
-
-         //data:moment('2013-8-25 16:40:00', 'YYYY-M-D HH:mm:ss').endOf('jMonth').format('jYYYY/jM/jD HH:mm:ss')
-         //data:moment('1392/6/3 16:40', 'jYYYY/jM/jD HH:mm').format('YYYY-M-D HH:mm:ss')
-          //data:moment('1981 5 17', 'YYYY jM D').format('YYYY/MM/DD')
-          //data:moment('1392/6/3 16:40', 'jYYYY/jM/jD HH:mm').format('YYYY-M-D HH:mm:ss')
-         //data:moment('1360/5/26', 'jYYYY/jM/jD').format('jYYYY/jM/jD [is] YYYY/M/D')
-          //data:moment.loadPersian('2013-8-25 16:40:00', 'YYYY-M-D HH:mm:ss')
-          //data:moment.jDaysInMonth(1395, 11)
-          //data:moment('1391/12/30', 'jYYYY/jMM/jDD').isValid()
+          //styles = rtlCSSJS({paddingLeft: '20px /* @noflip */'})
       }
     }
     //moment('2013-8-25', 'YYYY-M-D').endOf('jMonth').format('jYYYY/jM/jD ')
     render(){
       return(
-        <div>
-           <h1>jalai calender</h1>
+      //const styles = rtlCSSJS({paddingLeft: '20px /* @noflip */'})
+        <div dir="rtl">
+           <input type="text" placeholder="Name" />
            <h4> {moment('2018/01/24', 'YYYY/MM/DD').locale('fa').format('YYYY/MM/DD')}</h4>
         </div>
       )
     }
 }
 
+
 ReactDOM.render(<App/>,document.getElementById("watch"))
-//ReactDOM.render(<Jalali/>,document.getElementById("cal"))
+ReactDOM.render(<Jalali/>,document.getElementById("cal"))
+//ReactDOM.render(<MyForm/>,document.getElementById("myform"))

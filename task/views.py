@@ -7,3 +7,6 @@ def home(request):
 
 def table(request):
     return render(request,'task/table.html')
+
+def formtest(request):
+    return render(request,'task/form.html')
